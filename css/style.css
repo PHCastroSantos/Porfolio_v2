@@ -1,0 +1,42 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: auto;
+    background-color: aqua;
+    padding: 1%;
+    border-radius: 50px;
+    width: 85%;
+}
+
+header > nav > ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header > nav > ul > li{
+    list-style-type: none;
+}
+
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: black;
+}
+
+section {
+    height: 100vh;
+}
+
+#inicio {
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
