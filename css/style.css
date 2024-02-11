@@ -3,18 +3,41 @@
     font-size: 16px;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 header {
+    position: absolute;
     margin: auto;
-    background-color: #3b4d78;
+    background-color: #2e2e2e;
     padding: 1%;
+    margin-top: 30px;
     border-radius: 50px;
     width: 85%;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 10px 0.3px;
+    z-index: 9;
+}
+
+.header.sticky {
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    transition: all 0.3s;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 body {
-    background-color: black;
+    background-color: #2e2e2e;;
+}
+
+body > section > div {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 header > nav > ul{
@@ -42,6 +65,10 @@ header > nav > ul > li > a{
     color: white;
 }
 
+main > div {
+    background-color: white;
+}
+
 section {
     height: 100vh;
 }
@@ -50,7 +77,6 @@ section {
     background-color: white;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-
 }
 
 .mdi--dot {
@@ -63,10 +89,25 @@ section {
   }
 
 #sobre {
-    background-color: black;
+    background-color: #2e2e2e;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 #servicos {
     background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
 
+#projetos {
+    background-color: #2e2e2e;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#contato {
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
