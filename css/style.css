@@ -7,10 +7,14 @@
 
 header {
     margin: auto;
-    background-color: aqua;
+    background-color: #3b4d78;
     padding: 1%;
     border-radius: 50px;
     width: 85%;
+}
+
+body {
+    background-color: black;
 }
 
 header > nav > ul{
@@ -20,15 +24,22 @@ header > nav > ul{
 
 header > nav > ul > li{
     list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+header > nav > ul > li > h1{
+    font-size: 20px;
+    color: white;
+}
+
+header > nav > ul > li > span{
+    display: flex;
 }
 
 header > nav > ul > li > a{
     text-decoration: none;
-    color: black;
-}
-
-body {
-    background-color: black;
+    color: white;
 }
 
 section {
@@ -39,4 +50,23 @@ section {
     background-color: white;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+
+}
+
+.mdi--dot {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2'/%3E%3C/svg%3E");
+    width: 30px;
+    height: 30px;
+  }
+
+#sobre {
+    background-color: black;
+}
+
+#servicos {
+    background-color: white;
+
 }
