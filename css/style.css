@@ -17,7 +17,6 @@ header {
     border-radius: 50px;
     width: 85%;
     transition: all 0.3s;
-
     z-index: 9;
 }
 
@@ -74,7 +73,8 @@ section {
 }
 
 #inicio {
-    background-color: white;
+    background-color: #390d6b;
+    background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px; 
 }
