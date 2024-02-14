@@ -1,6 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,13 +9,15 @@
 }
 
 header {
+    box-shadow: 0 0 0.9375rem 0.0625rem;
     position: absolute;
     margin: auto;
-    background-color: RGBA(0, 0, 0, 0.5);
+    background-color: RGBA(31, 31, 31);
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     padding: 1%;
-    margin-top: 30px;
-    border-radius: 50px;
-    width: 85%;
+    margin-top: 1.875rem;
+    border-radius: 5vw;
+    width: 85vw;
     transition: all 0.3s;
     z-index: 9;
 }
@@ -23,7 +25,7 @@ header {
 .header.sticky {
     margin: auto;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     transition: all 0.3s;
     border-radius: 0;
     display: flex;
@@ -31,7 +33,7 @@ header {
 }
 
 body {
-    background-color: #2e2e2e;
+    background-color: rgb(31, 31, 31);
 }
 
 body > section > div {
@@ -51,7 +53,7 @@ header > nav > ul > li{
 }
 
 header > nav > ul > li > h1{
-    font-size: 20px;
+    font-size: 1.25rem;
     color: white;
 }
 
@@ -64,19 +66,8 @@ header > nav > ul > li > a{
     color: white;
 }
 
-main > div {
-    background-color: white;
-}
-
 section {
     height: 100vh;
-}
-
-#inicio {
-    background-color: #390d6b;
-    background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px; 
 }
 
 .mdi--dot {
@@ -84,30 +75,93 @@ section {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2'/%3E%3C/svg%3E");
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
   }
 
-#sobre {
-    background-color: #2e2e2e;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+main > div {
+    background-color: white;
+}
+
+#inicio {
+    background-color: white;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+}
+
+#sobre{
+    background-color: rgb(31, 31, 31);
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
 }
 
 #servicos {
     background-color: white;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
 }
 
 #projetos {
-    background-color: #2e2e2e;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    background-color: rgb(31, 31, 31);
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
 }
 
 #contato {
     background-color: white;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 2.5%;
+    }
+
+    header > nav > ul > li > h1{
+        font-size: 0.875rem;
+    }
+
+    header > nav > ul > li > a{
+        text-decoration: none;
+        color: white;
+        font-size: 0.625rem;
+    }
+
+    .mdi--dot {
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2'/%3E%3C/svg%3E");
+        width: 0.625rem;
+        height: 0.625rem;
+      }
+    
+}
+
+@media screen and (max-width: 480px) {
+    header > nav > ul > li > h1{
+        font-size: 0.75rem;
+    }
+
+    header > nav > ul > li > a{
+        text-decoration: none;
+        color: white;
+        font-size: 0.5rem;
+    }
+
+    .mdi--dot {
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M12 10a2 2 0 0 0-2 2a2 2 0 0 0 2 2c1.11 0 2-.89 2-2a2 2 0 0 0-2-2'/%3E%3C/svg%3E");
+        width: 0.5rem;
+        height: 0.5rem;
+      }
 }
